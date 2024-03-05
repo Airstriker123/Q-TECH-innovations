@@ -1,74 +1,162 @@
 <!DOCTYPE html>
-  <head>
-<script>
-console.log("!THIS WEBSITE WAS MADE BY Amit singh!");
-  </script>
-    <meta charset="UTF-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/png" sizes="16x16" href="FAVICON/favicon.ico">
-    <title>IQ-Tech Innovations</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
-    </section>
-    </div>
-    <header>
-      <div class="header"></div>
-      <img class="logo" src="images/logo.png" alt="ARK WIKI logo">  
-        <h1 class="banner-text"> <img src="images/Homepage.png" height="36">
-        </h1>
-        <img class="logo" src="images/logo.png" alt="ARK WIKI logo">  
-      </div>   
 
-      <nav>
-        <!--nav buttons-->
-            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"class="btn">Buy Iq-Versa</a>
-            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"class="btn">Social Media</a>
-            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"class="btn">Contact us</a>
-            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"class="btn">Other products</a>
-    </nav>
-  </header>
-    </head>
-    <div class="card" style="opacity: 1;">
-      <h2><b>What is *IQ-TECH innovations?</b></h2>
-      <p><b>IQ TECH innovations is a company that creates different technological advancements, such as PC addons, AIs and voice assistants. We aim to refine our technology for better use and a more wide range of content that existing technologies do not provide.  </b></p>
+<html lang="en">
+
+<head>
+  <title>LOADING SCREEN!!!!</title> 
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/png" sizes="16x16" href="FAVICON/favicon.ico">
+  <link rel="manifest" href="FAVICON/site.webmanifest">
+  <script src="properties/loading.js"></script>
+
+<style>
+ #loading-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    background-color: #000000;
+    font-family: Arial, sans-serif;
+  }
+
+  #loading-bar {
+    width: 50%;
+    height: 1rem;
+    background-color: #333;
+    border-radius: 0.5rem;
+    position: relative;
+  }
+
+  #loading-progress {
+    height: 100%;
+    background-color: #15ff00;
+    border-radius: 0.5rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation-name: progress;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+    animation: loading-progress 2s;
+  }
+
+  @keyframes loading-progress {
+    0% {
+      width: 0%;
+    }
+    50% {
+      width: 50%;
+    }
+    100% {
+      width: 100%;
+    }
+  }
+
+  #loading {
+    background-color: #000000;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+  }
+
+  #loading img {
+    max-width: 30%;
+    animation: pulse 1.5s infinite;
+  }
+
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+      
+    </style>
+
+</head>
+
+<body>
+
+  <div id="loading">
+
+    <img src="properties/images/Logo.png" alt="-_-">
+
+    <div id="loading-bar">
+
+      <div id="loading-progress"></div>
+
     </div>
-    <div class="card" style="opacity: 1;">
-      <h2><b>What is Iq-versa?</b></h2>
-      <p><b>The IQ Versa smart speaker is an AI voice assistant that uses its own Operating system (OS). Like its predecessors Google and Alexa, IQV can be used to initiate commands like playing a video/song, with its circular screen acting as a tablet with a touchpad. However, the IQ Versa smart speaker can be customisable in many different ways, such as a custom voice with its inbuilt ai, custom rgb lights to change the colour around the touchpad to any colour you want and can be used as a tablet, smoke detector, as well as just a regular speaker. Which makes it different to existing snart speakers such as Alex and Google next home.
-      </b></p>
-    </div>
-    <div class="card" style="opacity: 1;">
-      <h2><b>IQ-versa</b></h2>
-      <p><b>what our product will look like:</b></p>
-      <img class="product-image" src="images/versa.png" style="opacity: 1;">
-    </div>
-    <body>
-      <script>
-        function changeColor() {
-          
-          var footerText = document.getElementById("footer-text");
-          
-          if (footerText.style.color === "white") {
-           
-            footerText.style.color = "#62ff00";
-          
-          } else {
-          
-            footerText.style.color = "white";
-          
-          }
-        }
-        setInterval(changeColor, 500);
-      </script>
-          </section> 
-                </div>
-                <footer>
-                  <img class="logo" src="images/logo.png" alt="ARK WIKI logo">  
-                      <p id="footer-text">©Ark Wiki 2023 made by Amit Singh</p>
-                      <img class="logo" src="images/logo.png" alt="ARK WIKI logo">  
-                    </footer>
-                  </body>
-                 </body>
-                </html>
-              <script>
-                console.log("what u looking at lad!!!!!!!!!!!!!!!!!!! -__- you thought u could just slide here without any consequences you better watchout -some creapy dude")
-              </script>
+<script>
+
+//back up incase failed to load
+
+setTimeout(function(){
+
+  window.location.href = "properties/homepage.html";
+
+}, 3000);   
+
+function updateProgressBar(progress) {
+   
+  document.querySelector('#loading-progress').style.width = `${progress}%`;
+ 
+}
+
+  let progress = 0;
+
+  const duration = 2000; 
+
+  const step = 100 / (duration / 30); 
+
+  const intervalId = setInterval(() => {
+   
+    progress += step;
+
+    if (progress > 100) {
+    
+      progress = 100;
+    }
+   
+    updateProgressBar(progress);
+   
+    if (progress === 100) {
+   
+      clearInterval(intervalId);
+    
+      setTimeout(() => {
+     
+        document.querySelector('#loading-screen').remove();   
+      
+      }, duration);
+    }
+  }, 30);
+
+            </script>
+      </body>
+</html>
+<!--
+
+-->
+
+
