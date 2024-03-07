@@ -206,68 +206,84 @@ header {
   }
 
 
-  .card {
-    /* this is how the card class will display and how it will look like */
+    .card {
+  
     position: relative;
+    background-color: #000;
     color: #ffffff;
     opacity: 0.8;
     margin: 10px;
     padding: 20px;
     position: relative;
     border-radius: 5px;
-    box-shadow: 0 0 10px #00e5ff, 0 0 20px #00f7ff, 0 0 30px #00ddff, 0 0 40px #0400ff, 0 0 70px #0400ff, 0 0 80px #0d00ff, 0 0 100px #0099ff;
+    box-shadow: 0 0 10px #ffffff, 0 0 20px #ffffff, 0 0 30px #ffffff, 0 0 40px #00ffb3, 0 0 70px #00ffaa, 0 0 80px #00ffaa, 0 0 100px #00ffaa;
     transition: all 0.2s ease-in-out;
     flex-basis: 300px;
     text-align: center;
-    animation: rotate-gradient-angle 2s ease-in-out infinite,  function 1s ease-out;
-  }
+    animation: function 1s ease-out;
   
+  } 
+
+
+
+  @keyframes function {
+    0% {
+      opacity: 0;
+      transform: translateY(-100%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+}
+
   section {
-    /* this is how the section tag in the html pages will display */
+  
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     padding: 50px;
-  }
   
+  }
+
+ 
   .card:hover {
-    /* this is how the card class will display when you hover over it transforms slighty up and changes the box shadow and filter brightness which shows its brightness */
     transform: translateY(-5px);
-    opacity: 80%;
-    filter: brightness(100%);
-    color: #1500ff;
-    box-shadow: 0 0 10px #00eeff, 0 0 20px #ffffff, 0 0 30px #00b7ff, 0 0 40px #00eaff, 0 0 70px #00bfff, 0 0 80px #2200ff, 0 0 100px #00fff2;
-  }
+    filter: brightness(85%);
+    background-color: #ffffff;
+    color: #000000;
+    box-shadow: 0 0 10px #d6c6c6, 0 0 20px #ffffff, 0 0 30px #ffffff, 0 0 40px #ffffff, 0 0 70px  #00ffaa, 0 0 80px #00ffaa, 0 0 100px #00ffaa;
   
+
+  }
+
+
   .card h2 {
-    /* this is how the h2 in the card will display */
-    color: white;
     margin-top: 0;
     font-size: 24px;
   }
-  
+
+
   .card p {
-   /* this is how the p in the class will display */
-    margin-bottom: 0;
-    color: white;
-  }
   
+    margin-bottom: 0;
+  }
+
   .card ul {
-    /* this is the uI of the card */
-    color: white;
+ 
     margin: 0;
     padding: 0;
     list-style: none;
+ 
   }
+ 
   
   .card img {
-   /* this is how the img of the card will display */
-    width: 100%;
-    max-width: 100%;
-    height: auto;
-  }
-  
+      width: 100%;
+      max-width: 100%;
+      height: auto;
+    }
   
     
     footer {
@@ -332,12 +348,4 @@ a:hover {
     transform: translateY(0);
   }
 }
-/* a animation that shows the colors cyan and blue and they show as the backgroun color for the card and move around */
-@keyframes rotate-gradient-angle {
-  0% {
-    background: linear-gradient(135deg, hsl(180, 100%, 50%) 0%, hsl(240, 100%, 50%) 100%);
-  }
-  100% {
-    background: linear-gradient(235deg, hsl(180, 100%, 45%) 0%, hsl(240, 100%, 45%) 100%);
-  }
-}
+
