@@ -1,1 +1,82 @@
+<!DOCTYPE html>
+  <head>
+<script>
+console.log("!THIS WEBSITE WAS MADE BY Amit singh!");
+  </script>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" sizes="16x16" href="FAVICON/favicon.ico">
+    <title>IQ-Tech Innovations</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    </section>
+    </div>
+    <header>
+      <div class="header"></div>
+      <img class="logo" src="images/Logo - Copy (2).png" alt="ARK WIKI logo">  
+        <h1 class="banner-text"> <img src="images/Homepage.png" height="36">
+        </h1>
+        <img class="logo" src="images/Logo - Copy.png" alt="ARK WIKI logo">  
+      </div>   
 
+      <nav>
+        <!--nav buttons-->
+            <a href="Buy.html"class="btn">Buy Iq-Versa</a>
+            <a href="Social.html"class="btn">Social Media</a>
+            <a href="Contact"class="btn">Contact us</a>
+           
+    </nav>
+  </header>
+    </head>
+    <div class="card" style="opacity: 1;">
+         <h2><b>Video of our product</b></h2>
+         <p><b>watch it here!</b></p>
+            <iframe id="videoFrame" width="1000" height="550" src="/images/VIDEO.mp4" frameborder="0" allowfullscreen></iframe>
+          </div>
+    <body>
+      <script>
+  const videoFrame = document.getElementById('videoFrame');
+  const video = videoFrame.contentWindow.document.getElementsByTagName('video')[0];
+  function playVideo() {
+    video.play();
+  }
+  function pauseVideo() {
+    video.pause();
+  }
+  function checkVisibility() {
+    if (document.visibilityState === 'visible') {
+      playVideo();
+    } else {
+      pauseVideo();
+    }
+  }
+  document.addEventListener('visibilitychange', checkVisibility);
+  checkVisibility();
+</script>
+      <script>
+        function changeColor() {
+          
+          var footerText = document.getElementById("footer-text");
+          
+          if (footerText.style.color === "white") {
+           
+            footerText.style.color = "#62ff00";
+          
+          } else {
+          
+            footerText.style.color = "white";
+          
+          }
+        }
+        setInterval(changeColor, 500);
+      </script>
+          </section> 
+                </div>
+                <footer>
+                  <img class="logo" src="images/Logo - Copy (3).png" alt="ARK WIKI logo">  
+                      <p id="footer-text">©Ark Wiki 2023 made by Amit Singh</p>
+                      <img class="logo" src="images/Logo - Copy (4).png" alt="ARK WIKI logo">  
+                    </footer>
+                  </body>
+                 </body>
+                </html>
+              
