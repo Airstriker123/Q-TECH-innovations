@@ -26,6 +26,11 @@
   height: 500px;
 }
 
+.small-image {
+  height: auto;
+}
+
+
 @keyframes pulse {
   0% {
       text-shadow: 0 2px 20px rgb(202, 172, 0);
